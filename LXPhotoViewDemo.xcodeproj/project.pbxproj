@@ -41,6 +41,7 @@
 		E10853111EB1E27D007F346B /* LXPhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E10853101EB1E27D007F346B /* LXPhotoCollectionViewCell.m */; };
 		E10853141EB1E321007F346B /* ImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E10853131EB1E321007F346B /* ImageManager.m */; };
 		E10853171EB1E33C007F346B /* UIView+LXFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = E10853161EB1E33C007F346B /* UIView+LXFrame.m */; };
+		E10853211EB1EB5C007F346B /* UIButton+TouchAreaInsets.m in Sources */ = {isa = PBXBuildFile; fileRef = E10853201EB1EB5C007F346B /* UIButton+TouchAreaInsets.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -114,6 +115,8 @@
 		E10853131EB1E321007F346B /* ImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageManager.m; sourceTree = "<group>"; };
 		E10853151EB1E33C007F346B /* UIView+LXFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LXFrame.h"; sourceTree = "<group>"; };
 		E10853161EB1E33C007F346B /* UIView+LXFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LXFrame.m"; sourceTree = "<group>"; };
+		E108531F1EB1EB5C007F346B /* UIButton+TouchAreaInsets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+TouchAreaInsets.h"; sourceTree = "<group>"; };
+		E10853201EB1EB5C007F346B /* UIButton+TouchAreaInsets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+TouchAreaInsets.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +155,8 @@
 				E10852241EB1E11A007F346B /* AppDelegate.m */,
 				E10853121EB1E321007F346B /* ImageManager.h */,
 				E10853131EB1E321007F346B /* ImageManager.m */,
+				E108531F1EB1EB5C007F346B /* UIButton+TouchAreaInsets.h */,
+				E10853201EB1EB5C007F346B /* UIButton+TouchAreaInsets.m */,
 				E10853151EB1E33C007F346B /* UIView+LXFrame.h */,
 				E10853161EB1E33C007F346B /* UIView+LXFrame.m */,
 				E10853021EB1E25D007F346B /* 添加上传图片 */,
@@ -342,6 +347,7 @@
 				E10852DE1EB1E22F007F346B /* TZProgressView.m in Sources */,
 				E10852D61EB1E22F007F346B /* TZGifPhotoPreviewController.m in Sources */,
 				E108530B1EB1E25D007F346B /* LXUploadPhotoView.m in Sources */,
+				E10853211EB1EB5C007F346B /* UIButton+TouchAreaInsets.m in Sources */,
 				E10852DF1EB1E22F007F346B /* TZVideoPlayerController.m in Sources */,
 				E10852D31EB1E22F007F346B /* NSBundle+TZImagePicker.m in Sources */,
 				E10852FC1EB1E24C007F346B /* MASLayoutConstraint.m in Sources */,
@@ -509,6 +515,7 @@
 				E10852361EB1E11A007F346B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

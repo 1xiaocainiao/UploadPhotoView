@@ -8,6 +8,8 @@
 
 #import "LXPhotoCollectionViewCell.h"
 
+#import "UIButton+TouchAreaInsets.h"
+
 #import "Masonry.h"
 
 static CGFloat const kPhotoCellCellPadding = 0;
@@ -48,8 +50,8 @@ static CGFloat const kPhotoCellCellPadding = 0;
         [bgView addSubview:_deleteButton];
         
         [_deleteButton mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(self.contentView).offset(0);
-            make.trailing.equalTo(self.contentView.mas_trailing).offset(0);
+            make.top.equalTo(self.contentView).offset(-10);
+            make.trailing.equalTo(self.contentView.mas_trailing).offset(10);
         }];
     }
     return self;
@@ -61,5 +63,17 @@ static CGFloat const kPhotoCellCellPadding = 0;
         [_delegate clickCellDeleteButton:self];
     }
 }
+
+- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
+    if (_deleteButton.hidden == NO) {
+        CGRect rect = self.deleteButton.frame;
+        //CGRectInset 正 的 缩小， 负的放大
+        if (CGRectContainsPoint(CGRectInset(rect, -5, -5), point)) {
+            return _deleteButton;
+        }
+    }
+    return [super hitTest:point withEvent:event];
+}
+
 
 @end

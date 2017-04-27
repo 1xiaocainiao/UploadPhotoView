@@ -94,6 +94,11 @@ static NSString *kCellIdentifier = @"kCellIdentifier";
             return;
         }
         
+        LXPhotoCollectionViewCell *cell = (LXPhotoCollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
+        if (cell.photoIV.hidden == YES) {
+            return;
+        }
+        
         if (_lx_didTouchedAdd) {
             _lx_didTouchedAdd();
         }
@@ -245,7 +250,7 @@ static NSString *kCellIdentifier = @"kCellIdentifier";
     
     __weak typeof(self) weakSelf = self;
     
-    NSIndexPath *indexPath = [weakSelf.listView indexPathForCell:cell];
+    NSIndexPath *indexPath = [weakSelf.listView indexPathForItemAtPoint:cell.center];
     
     [self.listView performBatchUpdates:^{
         
