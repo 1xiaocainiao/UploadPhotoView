@@ -57,7 +57,7 @@
     CGFloat leftMargin = 10;
     CGFloat rightMargin = 10;
     
-    CGFloat width = (kLXSCREEN_WIDTH - itemSpacing * (numberOfRow - 1) - 20 - leftMargin - rightMargin)/numberOfRow;
+    CGFloat width = floor((kLXSCREEN_WIDTH - itemSpacing * (numberOfRow - 1) - 20 - leftMargin - rightMargin)/numberOfRow);
     
     LXUploadPhotoViewFlowLayout *layout = [[LXUploadPhotoViewFlowLayout alloc]init];
     layout.lx_maxRows = maxRows;
